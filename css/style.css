@@ -1,9 +1,87 @@
-h2 {
-	color: rgba(255, 40, 40, 0.794);
-	font-size: 50px;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-.someStyle {
-	color: rgba(255, 40, 40, 0.794);
+.header {
+	color: rgb(0, 0, 0);
+	font-size: 50px;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: rgba(96, 96, 255, 0.39);
+}
+
+.name {
+	color: blue;
+	font-size: 60px;
+	font-weight: bold;
+	background-color: rgba(161, 161, 161, 0.603);
+	text-align: center;
+}
+
+h2 {
+	color: red;
+	font-weight: bold;
+}
+
+.information {
+	background-color: rgb(134, 178, 196);
+	padding-left: 50px;
+	margin-bottom: 10px;
+}
+
+.education {
+	background-color: rgb(134, 178, 196);
+	padding-left: 50px;
+	margin-bottom: 10px;
+}
+
+.work {
+	background-color: rgb(134, 178, 196);
+	padding-left: 50px;
+	margin-bottom: 10px;
+}
+
+li {
+	font-size: 20px;
+}
+
+.motto {
 	font-size: 25px;
+}
+
+.aboutMe {
+    font-size: 20px;
+	padding-left: 10px;
+}
+
+img {
+	width: 70%;
+	height: auto;
+    margin-left: auto;
+	margin-right: auto;
+}
+.footer {
+	background-color: brown;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.top {
+	color: rgb(26, 207, 26);
+	font-size: 25px;
+}
+
+.url {
+	color: black;
+}
+.comunication {
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
 }
