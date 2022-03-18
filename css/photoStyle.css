@@ -2,22 +2,39 @@
     padding: 0;
 	margin: 0;
 }
+
+body {
+    background-color: rgba(221, 212, 199, 0.795);
+}
+
 img {
 	border: 5px solid rgba(55, 72, 226, 0.616);
+	width: 48%;
+	height: auto;
+    float: left;
+    position: relative;
+    margin: 1px;
 }
 
 img:hover {
     opacity: 0.9;
 	cursor: pointer;
 	transform: scale(1.1);
-}
-body {
-    background-color: rgba(221, 212, 199, 0.795);
+	transition: 0.5s linear
 }
 
 .link {
 	font-size: 30px;
 	font-weight: bold;
-	margin-bottom: 30px;
-	margin-top: 20px;
+	color: black;
+	display: inline-block;
+    margin: 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+	background: #3244bdbb;
+    border-radius: 25px;
+    transition: 0.5s linear;
+}
+.link:hover {
+    box-shadow: 0 0 0 2px #ff0000 inset, 0 0 0 4px white inset;
 }
