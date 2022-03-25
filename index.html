@@ -80,10 +80,10 @@
 			<div class="form">
 				<form autocomplete="on" name="formConnection">
 					<h2>Зворотній зв'язок</h2>
-				    <p><input required name="name" type="text" placeholder="Ім'я"></p></br>
-					<p><input required name="lastName" type="text" placeholder="Прізвище"></p></br>
-					<p><input required name="tel" type="tel" placeholder="Ваш телефон"></p></br>
-					<p><input required name="email" type="email" placeholder="Ваша електонна пошта"></p></br>
+				    <p><input required name="name" class="wrongAnim" pattern="[а-яa-z]*" type="text" placeholder="Ім'я"></p>
+					<p><input required name="lastName" class="wrongAnim" pattern="[а-яa-z]*" type="text" placeholder="Прізвище"></p>
+					<p><input required name="tel" class="wrongAnim" pattern="[0-9]*" type="tel" placeholder="Ваш телефон"></p>
+					<p><input required name="email" class="wrongAnim" type="email" placeholder="Ваша електонна пошта"></p>
 					<p>
 						<b>З вами зв'язатись:</b>
 					</p>
@@ -91,7 +91,9 @@
 					    <input type="radio" name="answer" value="a1">
 					    по телефону<br />
 				        <input type="radio" name="answer" value="a2">
-				    	через email<br />
+				    	через електронну пошту (email)<br />
+						<input type="radio" name="answer" value="a1">
+						по месенджеру (Viber/Telegram)<br />
 					</p>
 					<p class="button">
 					<input type="submit" value="Надіслати">

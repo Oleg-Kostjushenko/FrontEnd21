@@ -8,6 +8,7 @@
 
 body {
 	font-family: 'Playfair Display', serif;
+	font-weight: bold;
 	background-color: #d4d4d4ad;
 }
 
@@ -45,13 +46,14 @@ header {
 
 #main {
 	margin: 20px 150px 60px;
-	border: 5px solid rgb(105, 47, 47);
+	border: 5px solid rgb(61, 0, 131);
 }
 
 .name {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 40px;
 	text-align: center;
+	text-shadow: 1.5px 1.5px 0 blue;
 	font-weight: bold;
 }
 
@@ -85,7 +87,6 @@ header {
 	text-align: center;
 	cursor: pointer;
     position: absolute;
-    bottom: -30px;
     left: 0;
     right: 0;
     opacity: 0;
@@ -98,7 +99,8 @@ header {
 
 
 h2 {
-	color: red;
+	color: blue;
+	text-shadow: 1px 1px 0 #000;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin-bottom: 15px;
 	padding: 5px 20px 10px;
@@ -109,16 +111,25 @@ h2 {
 
 .block1 {
 	padding: 10px 10px 120px;
+	width: 650px;
+	height: 100px;
+	transition: 0.5s ease-in-out;
 }
 
 .block1:nth-child(odd) {
 	background-color: #e2e2e2;
 }
 
+.block1:hover {
+	width: 689px;
+	height: 120px;
+	box-shadow: 0 15px 15px -10px black;
+}
+
 .information {
 	width: 100px;
 	float: right;
-	box-shadow: 3px 3px 3px rgb(182, 121, 121);
+	box-shadow: 3px 3px 3px rgb(77, 135, 211);
 	cursor: pointer;
     -o-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
@@ -136,7 +147,7 @@ h2 {
 .education {
 	width: 100px;
 	float: right;
-	box-shadow: 3px 3px 3px rgb(182, 121, 121);
+	box-shadow: 3px 3px 3px rgb(77, 135, 211);
 	cursor: pointer;
     -o-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -155,11 +166,20 @@ h2 {
 
 .block2 {
 	padding: 10px 10px 120px;
+	width: 650px;
+	height: 100px;
+	transition: 0.5s ease-in-out;
 }
 .block2:nth-child(odd) {
 	background-color: #e2e2e2;
-	border-bottom: 2px solid rgba(255, 0, 0, 0.795);
-	border-top: 2px solid rgba(255, 0, 0, 0.795) ;
+	border-bottom: 2px solid blue;
+	border-top: 2px solid blue;
+}
+
+.block2:hover {
+	width: 689px;
+	height: 120px;
+	box-shadow: 0 15px 15px -10px black;
 }
 
 /* Work */
@@ -167,7 +187,7 @@ h2 {
 .worklogo {
 	width: 100px;
 	float: right;
-	box-shadow: 3px 3px 3px rgb(182, 121, 121);
+	box-shadow: 3px 3px 3px rgb(77, 135, 211);
 	cursor: pointer;
     -o-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -190,7 +210,7 @@ h2 {
 
 .work:nth-child(odd) {
 	background-color: #e2e2e2;
-	border-bottom: 2px solid rgba(255, 0, 0, 0.795);
+	border-bottom: 2px solid blue;
 }
 
 /* About me & connection */
@@ -211,8 +231,6 @@ h2 {
 }
 
 .comunication {
-	color: red;
-	font-weight: bold;
 	font-size: 20px;
 }
 
@@ -233,15 +251,15 @@ h2 {
 
 .connection a:nth-child(1),
 .connection a:nth-child(2) {
-	background: #998383bb;
+	background: #e7cfcfbb;
 }
 
 .connection a:nth-child(1):hover {
-	box-shadow: 0 0 0 2px #fcff3c, 0 0 0 4px #ff0000;
+	box-shadow: 0 0 0 2px #3cff46, 0 0 0 4px #0044ff;
 }
 
 .connection a:nth-child(2):hover {
-	box-shadow: 0 0 0 2px #fcff3c, 0 0 0 4px #ff0000;
+	box-shadow: 0 0 0 2px #3cff46, 0 0 0 4px #0044ff;
 }
 
 
@@ -254,7 +272,18 @@ h2 {
 	width: 400px;
 	text-align: center;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	box-shadow: 10px 10px 10px 10px rgba(131, 20, 20, 0.774);
+	box-shadow: 10px 10px 10px 10px rgba(120, 7, 155, 0.774);
+}
+
+.wrongAnim:invalid {
+	border: 2px solid #ff0000;
+	animation: shake 300ms;
+}
+
+@keyframes shake {
+	25% {transform: translateX(4px);}
+	50% {transform: translateX(-4px);}
+	75% {transform: translateX(4px);}
 }
 
 .button {
@@ -286,7 +315,7 @@ h2 {
 
 
 .footer {
-	background-color: brown;
+	background-color: rgb(107, 16, 180);
 	text-align: center;
 	margin-top: 105px;
 	font-size: 20px;
