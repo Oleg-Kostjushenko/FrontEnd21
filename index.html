@@ -68,10 +68,14 @@
         	</div>
         	<div class="aboutMe">
         		<h2>Про мене:</h2>
-        		<p class="motto">Дивіз по життю: зроби діло - гуляй сміло!</p>
-        		<p class="description">Стараюсь дотримуватись золотого правила етикету: "Стався до людини так, як хочеш щоб ставилсь до тебе".
-	    		Обожнюю працювати в дружньому колективі, де ти можеш допопмогти та допоможуть тобі. Люблю активний
-	    		відпочинок на природі та <a href="pages/photo.html" class="url">приколи!</a></p>
+				<div class="motto">
+        		    <p>Дивіз по життю: зроби діло - гуляй сміло!</p>
+				</div>
+				<div class="description">
+        		    <p>Стараюсь дотримуватись золотого правила етикету: "Стався до людини так, як хочеш щоб ставилсь до тебе".
+	    		    Обожнюю працювати в дружньому колективі, де ти можеш допопмогти та допоможуть тобі. Люблю активний
+	    		    відпочинок на природі та <a href="pages/photo.html" class="url">приколи!</a></p>
+				</div>
         	</div>
     	    <div class="connection">
     	        <a href="mailto:oleg.kostjushenko@gmail.com" class="comunication">Написати</a>
@@ -79,22 +83,26 @@
         	</div>
 			<div class="form">
 				<form autocomplete="on" name="formConnection">
-					<h2>Зворотній зв'язок</h2>
-				    <p><input required name="name" class="wrongAnim" pattern="[а-яa-z]*" type="text" placeholder="Ім'я"></p>
-					<p><input required name="lastName" class="wrongAnim" pattern="[а-яa-z]*" type="text" placeholder="Прізвище"></p>
-					<p><input required name="tel" class="wrongAnim" pattern="[0-9]*" type="tel" placeholder="Ваш телефон"></p>
-					<p><input required name="email" class="wrongAnim" type="email" placeholder="Ваша електонна пошта"></p>
-					<p>
-						<b>З вами зв'язатись:</b>
-					</p>
-					<p>
-					    <input type="radio" name="answer" value="a1">
-					    по телефону<br />
-				        <input type="radio" name="answer" value="a2">
-				    	через електронну пошту (email)<br />
-						<input type="radio" name="answer" value="a1">
-						по месенджеру (Viber/Telegram)<br />
-					</p>
+					<div class="answer">
+					    <h3>Зворотній зв'язок</h3>
+				        <p><input required name="name" class="wrongAnim" pattern="[а-яa-z]*" type="text" placeholder="Ім'я"></p>
+					    <p><input required name="lastName" class="wrongAnim" pattern="[а-яa-z]*" type="text" placeholder="Прізвище"></p>
+					    <p><input required name="tel" class="wrongAnim" pattern="[0-9]*" type="tel" placeholder="Ваш телефон"></p>
+					    <p><input required name="email" class="wrongAnim" type="email" placeholder="Ваша електонна пошта"></p>
+					</div>
+					<div class="radioAnswer">
+					    <p>
+					    	<b>З вами зв'язатись:</b>
+					    </p>
+					    <p>
+					        <input type="radio" name="answer" value="a1">
+					        по телефону<br />
+				            <input type="radio" name="answer" value="a2">
+				        	електронна пошта (email)<br />
+					    	<input type="radio" name="answer" value="a1">
+					    	месенджер (Viber/Telegram)<br />
+				    	</p>
+					</div>
 					<p class="button">
 					<input type="submit" value="Надіслати">
 					</p>
@@ -108,6 +116,7 @@
     		<p>&copy Здопомогоюстворив 2022 р.</p>
 	    </footer>
 	</article>
+
 </body>
 
 </html>

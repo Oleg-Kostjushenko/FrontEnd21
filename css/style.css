@@ -220,14 +220,21 @@ h2 {
 }
 
 .motto {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 25px;
-	padding-left: 10px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	margin-bottom: 10px;
+	border-radius: 25px;
+	background-color: rgba(61, 0, 131, 0.856);
 }
 
 .description {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	padding-left: 10px;
+	text-align: center;
+	border-top: 10px solid rgb(4, 39, 192);
+	border-bottom: 10px solid rgb(4, 39, 192);
 }
 
 .comunication {
@@ -270,9 +277,31 @@ h2 {
 .form {
 	margin: 60px auto;
 	width: 400px;
-	text-align: center;
+	height: 350px;
+	padding-bottom: 20px;
+	border: 5px solid #000;
+	border-radius: 60px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	box-shadow: 10px 10px 10px 10px rgba(120, 7, 155, 0.774);
+}
+
+.answer {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.answer h3 {
+	font-size: 25px;
+	font-weight: bold;
+	color: blue;
+	text-shadow: 1px 1px 0 #000;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.radioAnswer {
+	margin-left: 15px;
+	margin-bottom: 20px;
 }
 
 .wrongAnim:invalid {
@@ -287,8 +316,7 @@ h2 {
 }
 
 .button {
-	margin: 15px;
-	padding: 10px 5px;  
+	text-align: center;  
 }
 
 .top {
@@ -312,7 +340,6 @@ h2 {
 }
 
 /* Footer */
-
 
 .footer {
 	background-color: rgb(107, 16, 180);
