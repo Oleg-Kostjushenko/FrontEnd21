@@ -6,21 +6,23 @@
 
 body {
     margin: 0;
-    background-color: #bcbdda;
+    background-color: #e1e1e9;
     font-family: Montserrat, Arial, sans-serif;
     font-weight: 500;
 }
 
-a {
+.nav a {
     color: #0f1384;
 }
 
-a:hover {
+.nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
 
 .row {
     display: -webkit-flex;
@@ -34,6 +36,8 @@ a:hover {
 .justify-content-between {
     justify-content: space-between;
 	transition: 0.5s linear;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 [class*='column-'] {
@@ -48,7 +52,7 @@ a:hover {
 }
 
 .column-3 {
-    flex: 0 0 33.33%;
+    flex: 0 0 24%;
 }
 .mb {
     margin-bottom: 20px;
@@ -57,11 +61,19 @@ a:hover {
     text-align: center;
 }
 .heading {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.5;
     text-align: center;
     margin: 3.5rem 0;
-    color: #1a1a1a;
+	background: -webkit-linear-gradient(rgb(1, 1, 202) 55%, rgb(227, 227, 5) 44%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.aboutMe {
+	padding: 10px;
+}
+.url {
+	color: black;
 }
 .img-fluid {
     max-width: 100%;
@@ -103,7 +115,7 @@ a:hover {
 }
 header {
     height: 500px;
-    background: url(../img/HeaderBackand.jpg) no-repeat center #0f1384;
+    background: url(../img/DobrogoFon.jpg) no-repeat center #0f1384;
     background-size: cover;
     color: #fff;
 	text-shadow: 2px 2px 0 #000000;
@@ -136,9 +148,8 @@ header {
 	color: #c0d9fc;
 	display: inline-block;
 	margin-left: 5px;
+	transition: 0.5s linear;
 }
-
-
 .main-nav {
 	position: fixed;
 	top: 0px;
@@ -184,8 +195,10 @@ nav ul a:hover {
 	width: 30px;
 }
 
-
-
+#portfolio {
+	border-top: 5px solid blue;
+	border-bottom: 5px solid blue;
+}
 .portfolio-item {
 	margin: 0.5rem 0;
 	padding-top: 15px;
@@ -228,6 +241,24 @@ nav ul a:hover {
 label {
 	display: inline-block;
 	margin-bottom: 10px;
+}
+.wrongAnim:invalid:focus {
+	border: 2px solid #ff0000;
+	animation: shake 300ms;
+}
+
+@keyframes shake {
+	25% {
+		transform: translateX(4px);
+	}
+
+	50% {
+		transform: translateX(-4px);
+	}
+
+	75% {
+		transform: translateX(4px);
+	}
 }
 input,
 textarea {
@@ -337,7 +368,7 @@ textarea {
 @media (max-width: 960px) {
 	header {
 		height: 450px;
-		background-image: url(../Image/header2.jfif);
+		background-image: url(../img/DobrogoFon.jpg);
 	}
 
 	.column-3 {
@@ -474,7 +505,7 @@ textarea {
 
 	header {
 		height: 350px;
-		background-image: url(../Image/header3.jfif);
+		background-image: url(../img/DobrogoFon.jpg);
 	}
 
 	[class*='column-'] {
